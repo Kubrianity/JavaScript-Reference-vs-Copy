@@ -69,7 +69,7 @@
     }
     const pamuk = Object.assign({}, cat);
     pamuk.social.isDogFriendly = true; // Changes the original object!
-    
+    const miya = JSON.parse(JSON.stringify(cat)); // Alternative deep clone method not changing further levels of the original object
   </script>
 
 </body>
